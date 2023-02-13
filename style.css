@@ -1,0 +1,64 @@
+body{
+    background-image: url('./images/bg.jpg');
+    background-repeat: no-repeat; background-size: cover; background-position: fixed;
+    color: white;
+}
+
+.heading-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    /* border: 2px solid white; */
+    
+
+    
+}
+.heading-title h1{
+    color: white;
+}
+.resume{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    align-items: center;
+}
+.resume button a{
+    text-decoration: none;
+    color: white;
+}
+.resume button{
+    /* background-color: blue; */
+    height: 2.5rem;
+    border-radius: 2rem;
+    width: 14em;
+}
+.resume button:hover{
+    background-color: rgb(28, 28, 255);
+}
+.intro-container{
+    margin-top: 6em;
+    color: white;
+    margin-left: 1rem;
+}
+#main-btns{
+    height: 2.5rem;
+    border-radius: 2rem;
+    width: 12em;
+    margin-left: 2rem;
+}
+#main-btns a{
+    color: white;
+    text-decoration: none;
+}
+.logo-footer{
+    width: 2rem;
+}
+footer{
+    margin-top: 15rem;
+}
+@media (max-width:425px) and (min-width:300px){
+    #main-btns{
+        margin-top: 1rem;
+    }
+}

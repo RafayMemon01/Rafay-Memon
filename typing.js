@@ -1,4 +1,4 @@
-let different = ["MERN STACK DEVELOPER", "WEBSITE DEVELOPER", "WORDPRESS WEBSITE DEVELOPER", "Learner", "Coder"];
+let different = ["MERN STACK DEVELOPER", "WEBSITE DEVELOPER", "LEARNER", "CODER"];
 
 let index = 0; 
 let heroTextElement = document.getElementById("heroText");

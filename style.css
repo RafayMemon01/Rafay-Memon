@@ -1,9 +1,17 @@
 :root {
   /* Background and Text Colors */
-  --color-bg: #0F172A;
+  /* --color-bg: #0F172A; */
   /* Rich Navy Blue */
-  --color-text: #F8FAFC;
+  /* --color-text: #F8FAFC; */
   /* Light Grayish-White */
+
+  --color-bg-dark: #0F172A; /* Rich Navy Blue */
+  --color-text-dark: #F8FAFC; /* Light Grayish-White */
+
+  /* Background and Text Colors for Light Mode */
+  --color-bg-light: #F8FAFC; /* Light Grayish-White */
+  --color-text-light: #0F172A; /* Rich Navy Blue */
+
 
   /* Accent Colors */
   --color-primary-accent: #06B6D4;
@@ -14,6 +22,18 @@
   /* Button Hover Color */
   --color-btn-hover: #0EA5E9;
   /* Sky Blue */
+}
+
+/* Default theme (Dark Mode) */
+[data-theme='dark'] {
+  --color-bg: var(--color-bg-dark);
+  --color-text: var(--color-text-dark);
+}
+
+/* Light Mode */
+[data-theme='light'] {
+  --color-bg: var(--color-bg-light);
+  --color-text: var(--color-text-light);
 }
 
 body {
@@ -510,7 +530,7 @@ header {
   color: var(--color-text);
 
   button {
-  padding: 0.8em 1.5em;
+  padding: 0.8em 1em;
   background-color: black;
   color: var(--color-text);
   font-size: 1em;
@@ -530,4 +550,134 @@ header {
 
 .github-card .github-link i {
   font-size: 1.2em;
+}
+
+/* Contact section style */
+
+:root{
+   /* Button Hover Color */
+   --color-btn-hover: #0EA5E9; /* Sky Blue */
+
+   /* LinkedIn Colors */
+   --color-linkedin: #0077b5;
+   --color-linkedin-hover: #005582;
+ 
+   /* YouTube Colors */
+   --color-youtube: #FF0000;
+ 
+   /* Success/Subscribe Colors */
+   --color-subscribe: #34D399;
+   --color-subscribe-hover: #22C55E;
+}
+.contact-section {
+  /* font-family: 'Arial', sans-serif; */
+  padding: 2em;
+  border-radius: 12px;
+  text-align: center;
+  color: var(--color-text);
+}
+
+/* Email Section */
+.email-section {
+  margin-bottom: 2em;
+}
+
+.email-section h1 {
+  color: var(--color-secondary-accent);
+  cursor: pointer;
+  font-size: 1.5em;
+  margin: 0.5em 0;
+}
+
+.copy-button {
+  background-color: var(--color-secondary-accent);
+  color: var(--color-text);
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+  background-color: var(--color-btn-hover);
+}
+
+/* LinkedIn Section */
+.linkedin-button {
+  background-color: var(--color-linkedin);
+  color: var(--color-text);
+  border: none;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.linkedin-button:hover {
+  background-color: var(--color-linkedin-hover);
+}
+
+/* YouTube Section */
+.youtube-section {
+  margin-top: 2em;
+}
+
+.youtube-section p {
+  margin: 1em 0;
+  font-size: 1em;
+  color: var(--color-text);
+  font-family: 'Georgia', serif; /* Custom font for paragraphs */
+}
+
+.youtube-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.view-button {
+  background-color: var(--color-youtube);
+  color: var(--color-text);
+  border: none;
+  padding: 0.8em 1.2em;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+}
+
+.subscribe-button {
+  background-color: var(--color-subscribe);
+  color: var(--color-text);
+  border: none;
+  padding: 0.8em 1.2em;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subscribe-button:hover {
+  background-color: var(--color-subscribe-hover);
+  box-shadow: 0 5px 15px rgba(52, 211, 153, 0.4);
+}
+
+.semi-contact-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+footer{
+  color: var(--color-text);
 }

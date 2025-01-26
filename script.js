@@ -17,3 +17,37 @@ document.addEventListener('mousemove', (e) => {
     cursor.style.left = `${x}px`;
     cursor.style.top = `${y}px`;
 });
+
+document.getElementById('copy-button').addEventListener('click', () => {
+    const email = document.getElementById('email').innerText;
+    navigator.clipboard.writeText(email).then(() => {
+      alert('Email address copied to clipboard!');
+    });
+  });
+
+  
+
+//   color changing 
+// Function to switch theme
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  }
+  
+  // Detect the theme preference on load and apply it
+  window.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    } else {
+      // If no theme is saved, detect the user's system preference
+      const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', userPrefersDark ? 'dark' : 'light');
+    }
+  });
+  
+  // Toggle theme on button click
+  document.getElementById('mode').addEventListener('click', toggleTheme);
+  

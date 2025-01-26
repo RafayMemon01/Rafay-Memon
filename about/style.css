@@ -681,3 +681,53 @@ header {
 footer{
   color: var(--color-text);
 }
+
+/* About CSS */
+
+.aboutIntro{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1{
+    font-size: 48px;
+    color: var(--color-text);
+    text-align: center;
+  }
+
+  p{
+    
+    margin-top: -2em;
+    text-align: center;
+    color: var(--color-text);
+  }
+}
+
+.about-me{
+  display: flex;
+  /* justify-content: space-around; */
+  justify-content: center;
+  margin-top: 2em;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap-reverse;
+
+  .left-text{
+    flex: 1;
+  }
+
+  .right-img{
+    flex: 1;
+    .profile-img{
+      width: 350px;
+      height: 350px;
+      background-image: url('../images/profile-image.png');
+      background-size: cover;
+      background-position: center center;
+      border-radius: 100%;
+  box-shadow: 0 4px 15px rgba(6, 182, 212, 0.5);
+
+    }
+  }
+}

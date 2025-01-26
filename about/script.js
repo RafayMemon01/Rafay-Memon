@@ -18,7 +18,12 @@ document.addEventListener('mousemove', (e) => {
     cursor.style.top = `${y}px`;
 });
 
-
+document.getElementById('copy-button').addEventListener('click', () => {
+  const email = document.getElementById('email').innerText;
+  navigator.clipboard.writeText(email).then(() => {
+    alert('Email address copied to clipboard!');
+  });
+});
   
 
 //   color changing 

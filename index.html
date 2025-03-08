@@ -1,45 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Title for SEO -->
+    <title>
+      Rafay Memon - MERN Stack & WordPress Developer | Website Expert
+    </title>
 
-    <link
-      rel="shortcut icon"
-      href="./images/RM-Final_Logo.png"
-      type="image/x-icon"
-    />
-    <title>Website Developer | Rafay Memon</title>
-
+    <!-- Meta Description (SEO Optimized) -->
     <meta
       name="description"
-      content="Rafay Memon is a professional website developer offering custom web development services, specializing in creating responsive and user-friendly websites with cutting-edge technologies like React, Node.js, and more. Contact Rafay for high-quality, affordable website solutions."
+      content="Hire a professional MERN Stack Developer & WordPress Expert with 1 year of experience in React.js, Next.js, Node.js, Express.js, MongoDB, Firebase, and WooCommerce. Specializing in API integrations, website speed optimization, and SEO. Explore my services and Fiverr gigs to boost your online presence. Let's build something amazing!"
     />
+
+    <!-- Meta Keywords (SEO) -->
     <meta
       name="keywords"
-      content="web development, website developer, Rafay Memon, React developer, Node.js, responsive websites, front-end development, full-stack development, custom websites, affordable web development"
+      content="MERN Stack Developer, WordPress Expert, React.js Developer, Next.js Developer, Node.js Developer, Express.js Developer, MongoDB Developer, Firebase Developer, API Integration, Website Speed Optimization, SEO Expert, WooCommerce Developer, Elementor Expert, Web Developer for Hire, Fiverr Web Developer, Website Redesign, Frontend Developer, Backend Developer, Full Stack Developer, Professional Web Developer"
     />
+
+    <!-- Author Meta (Good for Branding) -->
+    <meta name="author" content="Rafay Memon" />
+
+    <!-- Indexing Instructions -->
     <meta name="robots" content="index, follow" />
 
+    <!-- Open Graph Meta Tags (For Social Media Sharing) -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Website Developer | Rafay Memon" />
+    <meta
+      property="og:title"
+      content="Hire Professional Website Developer - Rafay Memon"
+    />
     <meta
       property="og:description"
-      content="Rafay Memon is a professional website developer offering custom web development services with a focus on creating responsive, user-friendly websites using React, Node.js, and more."
+      content="Rafay Memon is a professional website developer offering custom web development services with a focus on creating responsive, user-friendly websites using React, Node.js, WordPress, and SEO optimization."
     />
     <meta
       property="og:image"
-      content="https://rafaymemon.online/images/profile-image.png"
+      content="https://rafaymemon.online/Assets/Images/profile-image.webp"
+    />
+    <meta
+      property="og:image:alt"
+      content="Professional MERN Stack & WordPress Developer - Rafay Memon"
     />
     <meta property="og:url" content="https://rafaymemon.online/" />
-    <meta property="og:site_name" content="Rafay Memon - Website Developer" />
+    <meta property="og:site_name" content="Website Developer - Rafay Memon" />
+    <meta property="og:locale" content="en_US" />
 
-    <link rel="stylesheet" href="./style.css" />
+    <!-- Twitter Card Meta Tags (For Better Twitter Sharing) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Hire Professional Website Developer - Rafay Memon"
+    />
+    <meta
+      name="twitter:description"
+      content="Rafay Memon specializes in MERN Stack & WordPress development, offering SEO-optimized, fast, and responsive websites. Explore services and Fiverr gigs today!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://rafaymemon.online/Assets/Images/profile-image.webp"
+    />
+
+    <!-- Canonical URL (Prevents Duplicate Content Issues) -->
+    <link rel="canonical" href="https://rafaymemon.online/" />
+
+    <!-- Favicon (Ensure Correct Path) -->
+    <link
+      rel="icon"
+      href="https://rafaymemon.online/favicon.ico"
+      type="image/x-icon"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link rel="canonical" href="https://rafaymemon.online/" />
   </head>
 
   <body>
@@ -48,121 +86,143 @@
     </div>
 
     <div class="container">
-      <div class="main-Intro">
-        <header>
-          <h1>Hello There!</h1>
+      <header class="animated-nav-bar navbar-lg">
+        <nav class="main-nav">
+          <a href="/" class="active" title="Home">HOME<span></span></a>
+          <a href="./about/" title="About me">ABOUT ME<span></span></a>
+          <a href="./#contact" title="Contact">CONTACT<span></span></a>
+          <a href="./#services" title="Services">MY SERVICES<span></span></a>
+          <a href="./#projects" title="My Portfolio">MY PORTFOLIO<span></span></a>
+        </nav>
+        <div>
+          <button class="action-btn" onclick="window.location.href = window.location.origin + '/#get-quote'">HIRE ME KNOW</button>
+          <button title="change the appearance" id="mode" class="bi bi-palette-fill"></button>
+        </div>
+      </header>
+      <header class="nav-bar-sm">
+        <span>Rafay Memon</span>
+        <button class="bi bi-list burger-btn" id="burgerBtn"></button>
+        <nav class="nav-menu-sm" id="mobileNav">
           <ul>
-            <li>
-              <a
-                href="https://www.github.com/RafayMemon01"
-                target="_blank"
-                class="bi bi-github"
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/rafay-memon-930190253/"
-                class="bi bi-linkedin"
-                target="_blank"
-              ></a>
-            </li>
-            <li>
-              <a
-                href="mailto:hey@rafaymemon.online"
-                target="_blank"
-                class="bi bi-envelope-fill"
-              ></a>
-            </li>
-            <li><a id="mode" class="bi bi-moon-fill"></a></li>
+            <li><a class="active" href="/">Home</a></li>
+            <li><a href="./about/">About Us</a></li>
+            <li><a href="./#services">Our Services</a></li>
+            <li><a href="./#contact">Contact Us</a></li>
+            <li><a href="./#projects">Our Portfolio</a></li>
           </ul>
-        </header>
-        <h1 class="intro">
+        </nav>
+      </header>
+
+      <div class="main-Intro">
+        <h2 class="intro">
           This is <br />&lt <span>Rafay Memon</span> /&gt. <br />A
           <span id="heroText">MERN STACK DEVELOPER</span><br />
           from PAKISTAN
-        </h1>
+        </h2>
       </div>
-
-      <div class="nav-header">
-        <nav>
+      <section class="little-about-section">
+        <h2>Who I Am?</h2>
+        <p>
+          Hey, I’m Rafay—a web developer who loves bringing ideas to life
+          through code. I specialize in MERN stack development and WordPress,
+          creating fast, user-friendly, and scalable websites.
+        </p>
+        <p>
+          From building full-stack applications to customizing WordPress sites,
+          I focus on delivering smooth experiences that actually work. Whether
+          it’s a business site, an e-commerce platform, or a custom web
+          solution, I’m all about making things functional, efficient, and
+          visually appealing.
+        </p>
+        <div class="social-media-handles">
           <ul>
             <li>
-              <a href="./about">ABOUT ME <span></span></a>
+              <a
+                href="https://www.linkedin.com/in/rafay-memon-930190253/"
+                target="_blank"
+                class="bi bi-linkedin"
+                title="LinkedIn"
+              ></a>
             </li>
             <li>
-              <a href="#projects">MY PROJECTS <span></span></a>
+              <a
+                href="http://github.com/RafayMemon01"
+                target="_blank"
+                class="bi bi-github"
+                title="GitHub"
+              ></a>
             </li>
             <li>
-              <a href="#contact">CONTACT ME <span></span></a>
+              <a
+                href="https://www.facebook.com/rafaymemon11"
+                target="_blank"
+                class="bi bi-facebook"
+                title="Facebook"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/_rafay_memon/"
+                target="_blank"
+                class="bi bi-instagram"
+                title="Instagram"
+              ></a>
             </li>
           </ul>
-        </nav>
-      </div>
-
-      <section class="little-about-section">
-        <h1>Who I Am?</h1>
-        <p>
-          I am Rafay, a passionate web developer and trainer with expertise in
-          modern web technologies like React, JavaScript, Node.js, and
-          WordPress. With a strong drive for innovation and learning, I love
-          crafting responsive and dynamic web applications.
-        </p>
-        <div class="tech-logos">
-          <img
-            height="40px"
-            width="40px"
-            src="./images/JavaScript-logo.png"
-            alt="JavaScript Logo"
-          />
-          <img
-            height="40px"
-            width="40px"
-            src="./images/React-icon.svg.png"
-            alt="React Logo"
-          />
-          <img
-            height="40px"
-            width="40px"
-            src="./images/Node.js_logo.svg.png"
-            alt="Node JS Logo"
-          />
-          <img
-            height="40px"
-            width="40px"
-            src="./images/express-js.png"
-            alt="Express JS Logo"
-          />
-          <img
-            height="40px"
-            width="40px"
-            src="./images/MongoDB.webp"
-            alt="MongoDB Logo"
-          />
-          <img
-            height="50px"
-            width="50px"
-            src="./images/firebase logo.png"
-            alt="firebase Logo"
-          />
-          <img
-            height="40px"
-            width="40px"
-            src="./images/Wordpress Logo.png"
-            alt="WordPress Logo"
-          />
         </div>
-        <a href="./about" class="more-about-btn">More About Me</a>
       </section>
 
+      <section id="services" class="services">
+        <div class="servicecontainer">
+          <h2 class="section-title">My Services</h2>
+          <p class="section-subtitle">
+            Crafting high-performance, visually stunning, and scalable web solutions tailored to your needs.
+          </p>
+      
+          <div class="services-grid">
+            <div class="service-card">
+              <h3>Full-Stack Web Development</h3>
+              <p>
+                I build dynamic, high-speed web applications using MERN Stack (MongoDB, Express.js, React.js, Node.js).
+              </p>
+            </div>
+      
+            <div class="service-card">
+              <h3>WordPress Development</h3>
+              <p>
+                Get a fully customized, SEO-friendly WordPress website with seamless plugin integrations and optimizations.
+              </p>
+            </div>
+      
+            <div class="service-card">
+              <h3>API Development & Integration</h3>
+              <p>
+                Secure API development, third-party integrations, and backend connectivity for robust web apps.
+              </p>
+            </div>
+      
+            <div class="service-card">
+              <h3>Website Optimization & Bug Fixing</h3>
+              <p>
+                Speed enhancements, mobile responsiveness, and debugging to deliver a smooth user experience.
+              </p>
+            </div>
+          </div>
+      
+          <div class="cta">
+            <a target="_blank" href="https://www.fiverr.com/abdulrafay2006" class="btn">View My Fiverr Gigs</a>
+          </div>
+        </div>
+      </section>
       <section class="projects-section" id="projects">
         <h1 class="projects-title">My Recent Projects</h1>
         <div class="projects-cards-container">
           <div class="card">
-            <img src="./images/post0.png" alt="Post 0 - Social Media App" />
+            <img src="./Assets/projectImages/post0.webp" alt="Post 0 - Social Media App" />
             <h2>Post 0 - Social Media App</h2>
             <p>I have developed this with React JS, Chakra UI, and Firebase.</p>
             <div class="card-action-buttons">
-              <a href="https://post0.vercel.app/" class="btn">View Live</a>
+              <a target="_blank" href="https://post0.rafaymemon.online" class="btn">View Live</a>
               <a
                 href="https://github.com/RafayMemon01/Social-media-app"
                 class="btn"
@@ -171,21 +231,21 @@
             </div>
           </div>
           <div class="card">
-            <img src="./images/Movie-app.png" alt="Simple Movie Search" />
-            <h2>Simple Movie Search</h2>
-            <p>I have developed this with React JS and API calls.</p>
+            <img src="./Assets/projectImages/aipractice.webp" alt="AI-Practice" />
+            <h2>Ask Gemini</h2>
+            <p>Built a full-stack AI app with Gemini API for processing requests and displaying outputs. Backend: Express.js/Node.js. Frontend: vanilla JS/HTML/CSS.</p>
             <div class="card-action-buttons">
-              <a href="https://movie-app-five-mu-91.vercel.app/" class="btn"
+              <a target="_blank" href="https://askai.rafaymemon.online/" class="btn"
                 >View Live</a
               >
-              <a href="https://github.com/RafayMemon01/Movie-App" class="btn"
+              <a target="_blank" href="https://github.com/RafayMemon01/AI-Practice" class="btn"
                 >GitHub Repo</a
               >
             </div>
           </div>
           <div class="card">
             <img
-              src="./images/Creative Canvaes.png"
+              src="./Assets/projectImages/drawingwebsite.webp"
               alt="Creative Canvas - Drawing Tool"
             />
             <h2>Creative Canvas - Drawing Tool</h2>
@@ -204,7 +264,7 @@
             </div>
           </div>
           <div class="card">
-            <img src="./images/Music-Player.png" alt="Music Player" />
+            <img src="./Assets/projectImages/music.webp" alt="Music Player" />
             <h2>Music Player</h2>
             <p>I developed this with JavaScript while learning JS.</p>
             <div class="card-action-buttons">
@@ -221,11 +281,11 @@
             </div>
           </div>
           <div class="card">
-            <img src="./images/auroria-fragrance.png" alt="Auroria Fragrance" />
+            <img src="./Assets/projectImages/auroriafragrance.webp" alt="Auroria Fragrance" />
             <h2>Auroria Fragrance - Client Project</h2>
             <p>I developed this with WordPress.</p>
             <div class="card-action-buttons">
-              <a href="https://auroriafragrance.com/" class="btn">View Live</a>
+              <a target="_blank" href="https://auroriafragrance.com/" class="btn">View Live</a>
             </div>
           </div>
           <div class="card github-card">
@@ -245,11 +305,28 @@
         </div>
       </section>
 
+      <section id="get-quote" class="quote-section">
+        <div class="quote-container">
+            <h2 class="section-title">Get a Quote</h2>
+            <p class="section-subtitle">Let’s discuss your project! Fill out the form below, and I’ll get back to you.</p>
+    
+            <form id="quoteForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Describe your project..." required></textarea>
+                <button type="submit" class="quote-btn">
+                    <span class="btn-text">Request a Quote</span>
+                    <i class="bi bi-check-circle tick-icon" style="display: none;"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
       <section class="contact-section" id="contact">
         <div class="semi-contact-container">
           <div class="email-section">
             <h2 id="copy-button">Get In Touch (Click to Copy)</h2>
-            <h1 id="email">hey@rafaymemon.dev</h1>
+            <h1 id="email" title="email">hey@rafaymemon.online</h1>
             <!-- <button id="copy-button" class="copy-button">Copy Email</button> -->
           </div>
 
@@ -274,13 +351,13 @@
           </p>
           <div class="youtube-buttons">
             <a href="https://www.youtube.com/@rafaytech" target="_blank">
-              <button class="view-button">View Channel</button>
+              <button class="view-button" title="RafayTech">View Channel</button>
             </a>
             <a
               href="https://www.youtube.com/@rafaytech?sub_confirmation=1"
               target="_blank"
             >
-              <button class="subscribe-button">Subscribe</button>
+              <button class="subscribe-button" title="Subscribe to RafayTech">Subscribe</button>
             </a>
           </div>
         </div>
@@ -289,22 +366,6 @@
       <footer><p>&copy; Rafay Memon 2025</p></footer>
     </div>
 
-    <script src="./typing.js"></script>
     <script src="./script.js"></script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Rafay Memon",
-        "url": "https://rafaymemon.online/",
-        "jobTitle": "Website Developer",
-        "sameAs": [
-          "https://www.linkedin.com/in/rafay-memon-930190253/",
-          "https://www.github.com/RafayMemon01"
-        ],
-        "image": "https://rafaymemon.online/images/profile-image.png",
-        "description": "Rafay Memon is a professional website developer specializing in creating custom, responsive websites using React, Node.js, and other modern technologies."
-      }
-    </script>
   </body>
 </html>

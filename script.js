@@ -5,30 +5,6 @@ window.onload = ()=>{
     },1000) //3 sec normal decrrease for developmenr
 }
 
-// Create the custom cursor element
-const cursor = document.createElement('div');
-cursor.classList.add('cursor');
-document.body.appendChild(cursor);
-
-// Update cursor position on mousemove
-document.addEventListener('mousemove', (e) => {
-    const x = e.clientX;
-    const y = e.clientY;
-    cursor.style.left = `${x}px`;
-    cursor.style.top = `${y}px`;
-});
-
-document.getElementById('copy-button').addEventListener('click', () => {
-    const email = document.getElementById('email').innerText;
-    navigator.clipboard.writeText(email).then(() => {
-      alert('Email address copied to clipboard!');
-    });
-  });
-
-  
-
-//   color changing 
-// Function to switch theme
 function toggleTheme() {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -50,4 +26,81 @@ function toggleTheme() {
   
   // Toggle theme on button click
   document.getElementById('mode').addEventListener('click', toggleTheme);
-  
+
+  const burgerBtn = document.getElementById("burgerBtn");
+const mobileNav = document.getElementById("mobileNav");
+
+burgerBtn.addEventListener("click", () => {
+    mobileNav.classList.toggle("open");
+});
+
+let different = ["MERN STACK DEVELOPER", "WEBSITE DEVELOPER", "LEARNER", "CODER"];
+
+let index = 0; 
+let heroTextElement = document.getElementById("heroText");
+
+function typeText(text, callback) {
+    let currentIndex = 0;
+    heroTextElement.innerHTML = ""; 
+    let typingInterval = setInterval(function() {
+        heroTextElement.innerHTML += text[currentIndex];
+        currentIndex++;
+        if (currentIndex === text.length) {
+            clearInterval(typingInterval);
+            setTimeout(callback, 2000); 
+        }
+    }, 100); 
+}
+
+function changeText() {
+    typeText(different[index], function() {
+        index = (index + 1) % different.length; 
+        changeText(); 
+    });
+}
+
+changeText();
+
+document.getElementById('copy-button').addEventListener('click', () => {
+  const email = document.getElementById('email').innerText;
+  navigator.clipboard.writeText(email).then(() => {
+    alert('Email address copied to clipboard!');
+  });
+});
+
+
+document.getElementById("quoteForm").addEventListener("submit", async function (e) {
+  e.preventDefault(); // Prevent default form submission
+
+  let form = this;
+  let submitButton = form.querySelector(".quote-btn");
+  let buttonText = submitButton.querySelector(".btn-text");
+  let tickIcon = submitButton.querySelector(".tick-icon");
+
+  // Show "Sending..."
+  buttonText.textContent = "Sending...";
+  submitButton.disabled = true;
+
+  try {
+      let formData = new FormData(form);
+      let response = await fetch("https://formspree.io/f/mqapzyjq", {
+          method: "POST",
+          body: formData,
+          headers: { "Accept": "application/json" },
+      });
+
+      if (response.ok) {
+          // Show tick ✅
+          buttonText.style.display = "none"; // Hide text
+          tickIcon.style.display = "inline"; // Show tick
+      } else {
+          alert("Something went wrong. Please try again.");
+          buttonText.textContent = "Request a Quote";
+          submitButton.disabled = false;
+      }
+  } catch (error) {
+      alert("Error submitting form!");
+      buttonText.textContent = "Request a Quote";
+      submitButton.disabled = false;
+  }
+});

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Rafay Memon</title>
+  <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+
+  <!-- ✅ TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ✅ Tailwind Icons (Heroicons) -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script src="https://unpkg.com/@heroicons/vue@2.0.0/dist/heroicons.min.js"></script>
+
+  <!-- Optional: Customize Tailwind config -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563eb', // blue-600
+            secondary: '#1e293b', // slate-800
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+    <a href="https://wa.me/923083960447" target="_blank"
+   class="fixed bottom-4 right-4 z-50 bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg transition duration-300 ease-in-out">
+   <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+      <path
+         d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.09.55 4.09 1.61 5.87L0 24l6.27-1.64A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.25-6.19-3.48-8.52zM12 22a9.89 9.89 0 0 1-5.06-1.36l-.36-.21-3.72.97.99-3.62-.23-.37A9.92 9.92 0 0 1 2 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.13-7.73c-.28-.14-1.65-.81-1.91-.9-.26-.1-.45-.14-.64.14s-.73.9-.9 1.08c-.17.18-.33.2-.61.07s-1.19-.44-2.27-1.41c-.84-.75-1.41-1.68-1.57-1.96s-.02-.44.12-.58c.12-.12.27-.33.4-.5.13-.17.17-.28.26-.47.09-.18.04-.35-.02-.5-.07-.14-.64-1.54-.88-2.1-.23-.55-.46-.48-.64-.49h-.55c-.17 0-.45.06-.68.28s-.89.86-.89 2.1c0 1.23.9 2.43 1.03 2.6.13.18 1.76 2.69 4.28 3.77.6.26 1.07.42 1.43.54.6.19 1.15.16 1.58.1.48-.07 1.48-.6 1.7-1.18.21-.58.21-1.07.15-1.18-.07-.11-.25-.17-.53-.31z" />
+   </svg>
+</a>
+
+
+  <header class="shadow-md sticky top-0 bg-white dark:bg-gray-800 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <span class="text-xl font-bold">Rafay Memon</span>
+      <nav class="space-x-4 hidden md:block">
+        <a href="/" class="hover:text-indigo-600">Home</a>
+        <a href="../about/" class="hover:text-indigo-600">About</a>
+        <a href="../services/" class="hover:text-indigo-600">Services</a>
+        <a href="#projects" class="hover:text-indigo-600">Projects</a>
+        <a href="#contact" class="hover:text-indigo-600">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden px-4 pb-4 hidden">
+      <a href="/" class="block py-1">Home</a>
+      <a href="../about/" class="block py-1">About</a>
+      <a href="../services/" class="block py-1">Services</a>
+      <a href="#projects" class="block py-1">Projects</a>
+      <a href="#contact" class="block py-1">Contact</a>
+    </div>
+  </header>
+
+  <section class="bg-white dark:bg-gray-900 py-16 px-6 sm:px-10 md:px-20">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
+    
+    <!-- Image -->
+    <div class="w-full md:w-1/3">
+      <img draggable="false" src="../assets/images/rafay-profile.jpg" alt="Rafay Profile" class="rounded-2xl shadow-lg object-cover w-full h-auto border-4 border-indigo-500 dark:border-indigo-400">
+    </div>
+
+    <!-- Content -->
+    <div class="w-full md:w-2/3 text-gray-800 dark:text-white space-y-6">
+      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+        👋 Hi, I'm <span class="text-indigo-600 dark:text-indigo-400">Rafay</span>
+      </h1>
+      <p class="text-lg text-gray-600 dark:text-gray-300">
+        A passionate <strong>Full Stack Web Developer</strong>, WordPress specialist, and founder of <strong>Pakdigit Solutions</strong>. With hands-on experience from <strong>Saylani Mass IT</strong>, teaching at RoseTech, and remote dev work for global clients, I craft responsive, engaging, and SEO-optimized digital experiences. I love turning business ideas into scalable web platforms that stand out.
+      </p>
+
+      <div class="flex flex-wrap gap-4">
+        <a href="../assets/docs/Rafay_Memon_Resume.pdf" download class="inline-flex items-center px-6 py-3 bg-indigo-600 text-white font-medium rounded-xl shadow hover:bg-indigo-700 transition">
+          <i class="bi bi-download mr-2"></i> Download Resume
+        </a>
+        <a href="#get-quote" class="inline-flex items-center px-6 py-3 border border-indigo-600 text-indigo-600 dark:text-indigo-400 font-medium rounded-xl hover:bg-indigo-50 dark:hover:bg-gray-800 transition">
+          <i class="bi bi-envelope-check mr-2"></i> Hire Me
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="my-story" class="bg-white dark:bg-gray-900 py-16 px-6 sm:px-10 md:px-20">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-6 border-l-4 border-indigo-600 pl-4">My Story</h2>
+    <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
+      I’ve always been a sharp and curious student, but my real turning point came with a program called <strong>“Zimedari Samjho”</strong>, organized by <strong>Rose Educational Society</strong>. It was my first exposure to a social development project — and it changed everything.
+      <br><br>
+      I didn’t even own a computer or a smartphone back then, but when I saw a poster about <strong>Rose IT</strong>, I couldn’t ignore my curiosity. I called <strong>Sir Adil Mehboob Bhatti</strong> directly and said, “Sir, I want to learn IT.” He invited me the next day, and that’s how my tech journey began.
+      <br><br>
+      At <strong>Rosetech</strong>, I turned on a computer for the first time — literally didn’t know how. From learning basic MS Office to HTML & CSS under <strong>Sir Umair</strong>, I built my foundation. Life took me away from Rosetech briefly, and during that time, I explored finance at the <strong>Pakistan Stock Exchange</strong>, learning about investments and the office environment.
+      <br><br>
+      Later, I enrolled in <strong>Saylani Mass IT Training Program</strong> — Batch 9 — under <strong>Sir Inzamam Malik</strong>, where I dived deep into web development. His teaching inspired my own teaching style. After the course, I returned to Rosetech — this time as an intern — and later was offered a management role by Sir Umair.
+      <br><br>
+      I took the opportunity seriously and began teaching MS Office. Soon, I requested to start a Web Development batch, and for the first time, I taught HTML, CSS, JS, and React. It was a proud milestone. In mid-2024, I co-founded <strong>PakDigit Solutions</strong> with Sir Umair to deliver real-world digital solutions — and the learning continues.
+      <br><br>
+      Alongside all this, I’m now pursuing my degree in <strong>BS Public Administration</strong> from <strong>Benazir University</strong>. Some ask why this field — and the truth is simple: due to circumstances during school, I ended up on a commerce path. Despite low marks in intermediate, I never stopped learning, and I make the most of every chance I get.
+      <br><br>
+      Today, I manage <strong>PakDigit Solutions</strong>, teach web development at Rosetech, and constantly improve my skills. From a kid with no access to a computer, to building websites and startups — my story is still being written.
+    </p>
+  </div>
+</section>
+
+<section id="skills" class="py-16 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-indigo-600 mb-4">My Skills & Tech Stack</h2>
+    <p class="text-gray-600 mb-12">The tools and technologies I use to build, teach, and lead.</p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      <!-- Skill Card -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <i class="fab fa-wordpress text-4xl text-indigo-500 mb-2"></i>
+        <p class="font-semibold text-gray-700">WordPress</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <i class="fab fa-css3-alt text-4xl text-indigo-500 mb-2"></i>
+        <p class="font-semibold text-gray-700">CSS3</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <i class="fab fa-js-square text-4xl text-indigo-500 mb-2"></i>
+        <p class="font-semibold text-gray-700">JavaScript</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <i class="fab fa-react text-4xl text-indigo-500 mb-2"></i>
+        <p class="font-semibold text-gray-700">React</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <i class="fab fa-node text-4xl text-indigo-500 mb-2"></i>
+        <p class="font-semibold text-gray-700">Node.js</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <i class="fas fa-database text-4xl text-indigo-500 mb-2"></i>
+        <p class="font-semibold text-gray-700">MongoDB</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <i class="fab fa-git-alt text-4xl text-indigo-500 mb-2"></i>
+        <p class="font-semibold text-gray-700">Git</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <i class="fas fa-file-word text-4xl text-indigo-500 mb-2"></i>
+        <p class="font-semibold text-gray-700">MS Word</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <i class="fas fa-file-excel text-4xl text-indigo-500 mb-2"></i>
+        <p class="font-semibold text-gray-700">MS Excel</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <i class="fas fa-users-cog text-4xl text-indigo-500 mb-2"></i>
+        <p class="font-semibold text-gray-700">Team Mgmt</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="socials" class="bg-white dark:bg-gray-900 py-16 px-6 sm:px-12 lg:px-24">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl font-bold text-gray-800 dark:text-white mb-6">
+      Let's Connect on Social Media
+    </h2>
+    <p class="text-gray-600 dark:text-gray-400 mb-12">
+      Stay connected and follow my journey across platforms.
+    </p>
+
+    <!-- Social Cards Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-center">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/rafay-memon-930190253/" target="_blank"
+        class="bg-blue-100 dark:bg-blue-900 hover:bg-blue-200 dark:hover:bg-blue-800 transition rounded-lg p-6 flex flex-col items-center shadow">
+        <i class="fab fa-linkedin text-4xl text-blue-700 dark:text-white mb-2"></i>
+        <span class="text-sm font-medium text-gray-700 dark:text-gray-300">LinkedIn</span>
+      </a>
+      <!-- YouTube -->
+      <a href="https://youtube.com/@rafaytech" target="_blank"
+        class="bg-red-100 dark:bg-red-900 hover:bg-red-200 dark:hover:bg-red-800 transition rounded-lg p-6 flex flex-col items-center shadow">
+        <i class="fab fa-youtube text-4xl text-red-600 dark:text-white mb-2"></i>
+        <span class="text-sm font-medium text-gray-700 dark:text-gray-300">YouTube</span>
+      </a>
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/rafaymemon11" target="_blank"
+        class="bg-blue-50 dark:bg-blue-950 hover:bg-blue-100 dark:hover:bg-blue-900 transition rounded-lg p-6 flex flex-col items-center shadow">
+        <i class="fab fa-facebook text-4xl text-blue-600 dark:text-white mb-2"></i>
+        <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Facebook</span>
+      </a>
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/_rafay_memon/" target="_blank"
+        class="bg-pink-100 dark:bg-pink-900 hover:bg-pink-200 dark:hover:bg-pink-800 transition rounded-lg p-6 flex flex-col items-center shadow">
+        <i class="fab fa-instagram text-4xl text-pink-500 dark:text-white mb-2"></i>
+        <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Instagram</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section id="free-consultation" class="bg-gray-100 dark:bg-gray-900 py-16 px-6 sm:px-12 lg:px-24">
+  <div class="max-w-3xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-3 text-center">Free Consultation</h2>
+    <p class="text-gray-600 dark:text-gray-300 mb-8 text-center">
+      Let’s discuss your project or questions — fill out the form and I’ll get back to you shortly.
+    </p>
+
+    <form id="quoteForm" class="space-y-6">
+      <input type="text" name="name" placeholder="Your Name" required
+        class="w-full p-3 rounded border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white" />
+      <input type="email" name="email" placeholder="Your Email" required
+        class="w-full p-3 rounded border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white" />
+      <textarea style="resize: none;" name="message" rows="5" placeholder="Describe your project or questions..." required
+        class="w-full p-3 rounded border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white"></textarea>
+
+      <!-- Optional Consultation Topic -->
+      <select name="topic" class="w-full p-3 rounded border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white" aria-label="Consultation Topic">
+        <option value="" disabled selected>Select Consultation Topic</option>
+        <option value="web-development">Web Development</option>
+        <option value="wordpress">WordPress</option>
+        <option value="freelancing">Freelancing Advice</option>
+        <option value="other">Other</option>
+      </select>
+
+      <button type="submit" class="w-full flex justify-center items-center bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded py-3 transition">
+        <span class="btn-text">Request Free Consultation</span>
+        <svg class="tick-icon ml-2 w-6 h-6 text-green-400 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </button>
+    </form>
+  </div>
+</section>
+
+
+  <footer class="bg-gray-100 dark:bg-gray-800 py-6 text-center mt-20">
+    <p class="text-sm">© 2025 Rafay Memon. All rights reserved.</p>
+    <div class="flex justify-center space-x-4 mt-2">
+      <a href="https://github.com/rafaymemon01" target="_blank" aria-label="GitHub">
+        <svg class="w-5 h-5 hover:text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 .5a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6a3.1 3.1 0 00-1.3-1.7c-1.1-.8.1-.8.1-.8a2.5 2.5 0 011.8 1.2 2.6 2.6 0 003.5 1 2.6 2.6 0 01.8-1.6c-2.7-.3-5.6-1.3-5.6-5.8a4.6 4.6 0 011.2-3.2 4.3 4.3 0 01.1-3.1s1-.3 3.3 1.2a11.4 11.4 0 016 0C16 5 17 5.3 17 5.3a4.3 4.3 0 01.1 3.1 4.6 4.6 0 011.2 3.2c0 4.5-2.9 5.5-5.6 5.8a3 3 0 01.9 2.3v3.5c0 .3.2.7.8.6A12 12 0 0012 .5z"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

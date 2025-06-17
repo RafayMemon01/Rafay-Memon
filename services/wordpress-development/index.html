@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Service</title>
+    <title>WordPress Website Development</title>
     <link
       rel="shortcut icon"
       href="/assets/images/favicon.ico"
@@ -18,19 +18,19 @@
     />
 
     <script src="https://unpkg.com/@heroicons/vue@2.0.0/dist/heroicons.min.js"></script>
-      <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            primary: '#2563eb', // blue-600
-            secondary: '#1e293b', // slate-800
-          }
-        }
-      }
-    }
-  </script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2563eb", // blue-600
+              secondary: "#1e293b", // slate-800
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body
     class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white font-sans"
@@ -53,130 +53,604 @@
       </svg>
     </a>
 
-<header class="shadow-md sticky top-0 bg-white dark:bg-gray-800 z-50">
-  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-    <span class="text-xl font-bold text-indigo-600">Rafay Memon</span>
+    <header class="shadow-md sticky top-0 bg-white dark:bg-gray-800 z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <span class="text-xl font-bold text-indigo-600">Rafay Memon</span>
 
-    <!-- Desktop Nav -->
-    <nav class="space-x-6 hidden md:flex items-center">
-      <a href="/" class="hover:text-indigo-600">Home</a>
-      <a href="/about/" class="hover:text-indigo-600">About</a>
+        <!-- Desktop Nav -->
+        <nav class="space-x-6 hidden md:flex items-center">
+          <a href="/" class="hover:text-indigo-600">Home</a>
+          <a href="/about/" class="hover:text-indigo-600">About</a>
 
-      <!-- Services Dropdown -->
-      <div class="relative group">
-        <button class="hover:text-indigo-600 flex items-center gap-1">
-          <a href="/services/">Services</a>
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        <div
-          class="absolute left-0 mt-2 w-60 bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-200 z-50">
-          <div class="p-3 space-y-2 text-sm text-gray-800 dark:text-gray-200">
-            <div>
-              <h4 class="font-semibold text-indigo-500">Website Solutions</h4>
-              <ul class="space-y-1 pl-3">
-                <li><a href="/services/responsive-development/" class="block hover:text-indigo-600">Responsive Website Development</a></li>
-                <li><a href="/services/wordpress-development/" class="block hover:text-indigo-600">WordPress Website Development</a></li>
-                <li><a href="/services/custom-development/" class="block hover:text-indigo-600">Custom Website Development</a></li>
-                <li><a href="/services/speed-optimization/" class="block hover:text-indigo-600">Website Speed Optimization</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="font-semibold text-indigo-500">Maintenance & Security</h4>
-              <ul class="space-y-1 pl-3">
-                <li><a href="/services/maintenance-security/" class="block hover:text-indigo-600">Website Maintenance & Security</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="font-semibold text-indigo-500">Digital Strategy</h4>
-              <ul class="space-y-1 pl-3">
-                <li><a href="/services/landing-page-design/" class="block hover:text-indigo-600">Landing Page Design</a></li>
-                <li><a href="/services/seo-optimization/" class="block hover:text-indigo-600">SEO Optimization</a></li>
-                <li><a href="/services/consulting-strategy/" class="block hover:text-indigo-600">Tech Consulting & Strategy</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="font-semibold text-indigo-500">Applications</h4>
-              <ul class="space-y-1 pl-3">
-                <li><a href="/services/saas-platforms/" class="block hover:text-indigo-600">Custom SaaS (MERN Stack)</a></li>
-                <li><a href="/services/ecommerce-store/" class="block hover:text-indigo-600">E-Commerce Store Development</a></li>
-              </ul>
+          <!-- Services Dropdown -->
+          <div class="relative group">
+            <button class="hover:text-indigo-600 flex items-center gap-1">
+              <a href="/services/">Services</a>
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              class="absolute left-0 mt-2 w-60 bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-200 z-50"
+            >
+              <div
+                class="p-3 space-y-2 text-sm text-gray-800 dark:text-gray-200"
+              >
+                <div>
+                  <h4 class="font-semibold text-indigo-500">
+                    Website Solutions
+                  </h4>
+                  <ul class="space-y-1 pl-3">
+                    <li>
+                      <a
+                        href="/services/responsive-development/"
+                        class="block hover:text-indigo-600"
+                        >Responsive Website Development</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/services/wordpress-development/"
+                        class="block hover:text-indigo-600"
+                        >WordPress Website Development</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/services/custom-development/"
+                        class="block hover:text-indigo-600"
+                        >Custom Website Development</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/services/speed-optimization/"
+                        class="block hover:text-indigo-600"
+                        >Website Speed Optimization</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-indigo-500">
+                    Maintenance & Security
+                  </h4>
+                  <ul class="space-y-1 pl-3">
+                    <li>
+                      <a
+                        href="/services/maintenance-security/"
+                        class="block hover:text-indigo-600"
+                        >Website Maintenance & Security</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-indigo-500">
+                    Digital Strategy
+                  </h4>
+                  <ul class="space-y-1 pl-3">
+                    <li>
+                      <a
+                        href="/services/landing-page-design/"
+                        class="block hover:text-indigo-600"
+                        >Landing Page Design</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/services/seo-optimization/"
+                        class="block hover:text-indigo-600"
+                        >SEO Optimization</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/services/consulting-strategy/"
+                        class="block hover:text-indigo-600"
+                        >Tech Consulting & Strategy</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-indigo-500">Applications</h4>
+                  <ul class="space-y-1 pl-3">
+                    <li>
+                      <a
+                        href="/services/saas-platforms/"
+                        class="block hover:text-indigo-600"
+                        >Custom SaaS (MERN Stack)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/services/ecommerce-store/"
+                        class="block hover:text-indigo-600"
+                        >E-Commerce Store Development</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
+
+          <a href="#projects" class="hover:text-indigo-600">Projects</a>
+          <a href="#contact" class="hover:text-indigo-600">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <!-- 📱 Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden px-4 pb-4 hidden space-y-1 text-sm"
+      >
+        <a href="/" class="block py-2">Home</a>
+        <a href="/about/" class="block py-2">About</a>
+
+        <!-- 📁 Services Dropdown (Collapsible) -->
+        <div>
+          <button
+            id="mobile-services-btn"
+            class="flex justify-between items-center w-full py-2 text-left hover:text-indigo-600"
+          >
+            <a href="/services/">Services</a>
+            <svg
+              id="mobile-services-icon"
+              class="w-4 h-4 transform transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+
+          <div id="mobile-services-menu" class="ml-4 mt-1 space-y-1 hidden">
+            <p class="font-semibold text-indigo-500">Website Solutions</p>
+            <a href="/services/responsive-development/" class="block pl-2"
+              >Responsive Website</a
+            >
+            <a href="/services/wordpress-development/" class="block pl-2"
+              >WordPress Development</a
+            >
+            <a href="/services/custom-development/" class="block pl-2"
+              >Custom Website</a
+            >
+            <a href="/services/speed-optimization/" class="block pl-2"
+              >Speed Optimization</a
+            >
+
+            <p class="font-semibold text-indigo-500 mt-2">
+              Maintenance & Security
+            </p>
+            <a href="/services/maintenance-security/" class="block pl-2"
+              >Maintenance & Security</a
+            >
+
+            <p class="font-semibold text-indigo-500 mt-2">Digital Strategy</p>
+            <a href="/services/landing-page-design/" class="block pl-2"
+              >Landing Pages</a
+            >
+            <a href="/services/seo-optimization/" class="block pl-2"
+              >SEO Optimization</a
+            >
+            <a href="/services/consulting-strategy/" class="block pl-2"
+              >Tech Consulting</a
+            >
+
+            <p class="font-semibold text-indigo-500 mt-2">Applications</p>
+            <a href="/services/saas-platforms/" class="block pl-2"
+              >Custom SaaS</a
+            >
+            <a href="/services/ecommerce-store/" class="block pl-2"
+              >E-Commerce Store</a
+            >
+          </div>
+        </div>
+
+        <a href="#projects" class="block py-2">Projects</a>
+        <a href="#contact" class="block py-2">Contact</a>
+      </div>
+    </header>
+
+    <section class="bg-gray-50 dark:bg-gray-900 py-20 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <div
+          class="inline-flex items-center justify-center w-16 h-16 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-white rounded-full mb-4"
+        >
+          <!-- WordPress Icon -->
+          <!-- WordPress Icon (Working SVG) -->
+          <!-- WordPress Icon -->
+<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-6 h-6 text-blue-600 fill-current">
+  <path d="M224 32C100.3 32 0 132.3 0 256s100.3 224 224 224 224-100.3 224-224S347.7 32 224 32zm103.2 126.4c26.7 32.2 42.6 73.5 42.6 117.6 0 56.4-25.6 106.7-66.2 139.6l-69.3-198 25.6-1.3c11.3-.7 11.3-17.8 0-18.5l-44.7-2.7 2.4-7.1c5.5-15.7 9.8-29.2 9.8-39.1 0-15.1-5.6-28.6-13.1-37.4 48.4 1.6 91.8 22.2 113.1 47.1zM224 64c41.3 0 79 13.4 109.3 36.1-9.9-.8-20.3-1.3-30.6-1.3-29.8 0-50.8 5.7-50.8 5.7-10.3-1.4-21.2-2.1-32.4-2.1-31.8 0-59.1 7.4-80.2 19.2-34.2 19.4-55.8 52.6-55.8 90.6 0 14.6 4.2 30 11.8 45.6L224 448c-105.9 0-192-86.1-192-192S118.1 64 224 64z"/>
+</svg> -->
+<?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 122.88" style="enable-background:new 0 0 122.88 122.88" xml:space="preserve"><style type="text/css">.st0{fill:#4F46E5;}</style><g><path class="st0" d="M61.44,0C27.51,0,0,27.51,0,61.44c0,33.93,27.51,61.44,61.44,61.44c33.93,0,61.44-27.51,61.44-61.44 C122.88,27.51,95.37,0,61.44,0L61.44,0z M106.37,36.88c0.22,1.63,0.34,3.38,0.34,5.26c0,5.19-0.97,11.03-3.89,18.34l-15.64,45.21 c15.22-8.87,25.46-25.37,25.46-44.25C112.64,52.54,110.37,44.17,106.37,36.88L106.37,36.88z M62.34,65.92l-15.36,44.64 c4.59,1.35,9.44,2.09,14.46,2.09c5.96,0,11.68-1.03,17-2.9c-0.14-0.22-0.26-0.45-0.37-0.71L62.34,65.92L62.34,65.92z M96,58.86 c0-6.33-2.27-10.71-4.22-14.12c-2.6-4.22-5.03-7.79-5.03-12.01c0-4.71,3.57-9.09,8.6-9.09c0.23,0,0.44,0.03,0.66,0.04 c-9.11-8.35-21.25-13.44-34.57-13.44c-17.89,0-33.62,9.18-42.78,23.08c1.2,0.04,2.33,0.06,3.3,0.06c5.35,0,13.65-0.65,13.65-0.65 c2.76-0.16,3.08,3.89,0.33,4.22c0,0-2.77,0.32-5.86,0.49l18.64,55.46l11.21-33.6l-7.98-21.86c-2.76-0.16-5.37-0.49-5.37-0.49 c-2.76-0.16-2.44-4.38,0.32-4.22c0,0,8.45,0.65,13.48,0.65c5.35,0,13.65-0.65,13.65-0.65c2.76-0.16,3.08,3.89,0.33,4.22 c0,0-2.78,0.32-5.86,0.49L87,92.47l5.28-16.74C94.63,68.42,96,63.24,96,58.86L96,58.86z M10.24,61.44 c0,20.27,11.78,37.78,28.86,46.08L14.67,40.6C11.83,46.97,10.24,54.01,10.24,61.44L10.24,61.44z M61.44,3.69 c7.8,0,15.36,1.53,22.48,4.54c3.42,1.45,6.72,3.24,9.81,5.32c3.06,2.07,5.94,4.44,8.55,7.05c2.61,2.61,4.99,5.49,7.05,8.55 c2.09,3.09,3.88,6.39,5.32,9.81c3.01,7.12,4.54,14.68,4.54,22.48c0,7.8-1.53,15.36-4.54,22.48c-1.45,3.42-3.24,6.72-5.32,9.81 c-2.07,3.06-4.44,5.94-7.05,8.55c-2.61,2.61-5.49,4.99-8.55,7.05c-3.09,2.09-6.39,3.88-9.81,5.32c-7.12,3.01-14.68,4.54-22.48,4.54 c-7.8,0-15.36-1.53-22.48-4.54c-3.42-1.45-6.72-3.24-9.81-5.32c-3.06-2.07-5.94-4.44-8.55-7.05c-2.61-2.61-4.99-5.49-7.05-8.55 c-2.09-3.09-3.88-6.39-5.32-9.81C5.21,76.8,3.69,69.24,3.69,61.44c0-7.8,1.53-15.36,4.54-22.48c1.45-3.42,3.24-6.72,5.32-9.81 c2.07-3.06,4.44-5.94,7.05-8.55c2.61-2.61,5.49-4.99,8.55-7.05c3.09-2.09,6.39-3.88,9.81-5.32C46.08,5.21,53.64,3.69,61.44,3.69 L61.44,3.69z"/></g></svg>
+        </div>
+        <h1 class="text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
+          WordPress Website Development
+        </h1>
+        <p class="text-gray-700 dark:text-gray-300 text-lg max-w-2xl mx-auto">
+          Get a professionally designed, fully functional, and easy-to-manage
+          WordPress website tailored to your goals—whether it’s for business,
+          blogging, or eCommerce.
+        </p>
+      </div>
+    </section>
+    <section class="bg-white py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <!-- Heading -->
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+      What I Offer
+    </h2>
+
+    <!-- Grid of Features -->
+    <div class="grid md:grid-cols-3 gap-10">
+      <!-- Feature 1 -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition-all">
+        <div class="text-3xl text-indigo-600 mb-4">🧱</div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Custom Theme Development</h3>
+        <p class="text-gray-600">
+          I build WordPress themes from scratch or customize existing ones—ensuring clean code and complete control.
+        </p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition-all">
+        <div class="text-3xl text-indigo-600 mb-4">🔌</div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Plugin Integration</h3>
+        <p class="text-gray-600">
+          Seamless integration of necessary plugins for performance, SEO, eCommerce, and more—without bloat.
+        </p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition-all">
+        <div class="text-3xl text-indigo-600 mb-4">📱</div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Fully Responsive Design</h3>
+        <p class="text-gray-600">
+          Your site will look and function beautifully on all screen sizes—mobile, tablet, and desktop.
+        </p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition-all">
+        <div class="text-3xl text-indigo-600 mb-4">⚡</div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Speed Optimization</h3>
+        <p class="text-gray-600">
+          I optimize load time using caching, image compression, and script handling to deliver top-tier performance.
+        </p>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition-all">
+        <div class="text-3xl text-indigo-600 mb-4">🔐</div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Security Best Practices</h3>
+        <p class="text-gray-600">
+          From firewall setups to login protection and secure hosting, I ensure your website is well-guarded.
+        </p>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition-all">
+        <div class="text-3xl text-indigo-600 mb-4">🧠</div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Ongoing Support</h3>
+        <p class="text-gray-600">
+          I provide post-launch support and maintenance plans, ensuring your WordPress site stays up-to-date and secure.
+        </p>
+      </div>
+    </div>
+
+    <!-- Value Proposition -->
+    <div class="text-center mt-16 max-w-3xl mx-auto">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-4">My Value Proposition</h3>
+      <p class="text-gray-600 text-lg">
+        I combine performance, clean code, design precision, and SEO to build WordPress websites that don’t just look great — they perform, convert, and grow with your brand.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+    <section class="bg-gray-50 py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+      Why Choose Me for WordPress Development?
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Feature 1 -->
+      <div class="flex items-start gap-4">
+        <div class="text-indigo-600 text-3xl">🎯</div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800">Specialized WordPress Expertise</h3>
+          <p class="text-gray-600 mt-2">
+            I don’t just use WordPress—I understand its architecture. Every project is built for performance and scalability.
+          </p>
         </div>
       </div>
 
-      <a href="#projects" class="hover:text-indigo-600">Projects</a>
-      <a href="#contact" class="hover:text-indigo-600">Contact</a>
-    </nav>
+      <!-- Feature 2 -->
+      <div class="flex items-start gap-4">
+        <div class="text-indigo-600 text-3xl">⚙️</div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800">No Templates, Just Tailored Builds</h3>
+          <p class="text-gray-600 mt-2">
+            Every site is custom-designed to match your brand. No off-the-shelf themes or bloated builders.
+          </p>
+        </div>
+      </div>
 
-    <!-- Mobile Menu Button -->
-    <button id="menu-btn" class="md:hidden">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
-        stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-  </div>
+      <!-- Feature 3 -->
+      <div class="flex items-start gap-4">
+        <div class="text-indigo-600 text-3xl">🚀</div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800">Performance-First Approach</h3>
+          <p class="text-gray-600 mt-2">
+            Sites load fast and are fully optimized. Speed audits and Core Web Vitals compliance included.
+          </p>
+        </div>
+      </div>
 
-  <!-- Mobile Menu -->
-  <!-- 📱 Mobile Menu -->
-<div id="mobile-menu" class="md:hidden px-4 pb-4 hidden space-y-1 text-sm">
-  <a href="/" class="block py-2">Home</a>
-  <a href="/about/" class="block py-2">About</a>
+      <!-- Feature 4 -->
+      <div class="flex items-start gap-4">
+        <div class="text-indigo-600 text-3xl">🔐</div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800">Secure & Future-Proof</h3>
+          <p class="text-gray-600 mt-2">
+            Security hardening, automatic backups, and plugin vetting keep your site stable and protected.
+          </p>
+        </div>
+      </div>
 
-  <!-- 📁 Services Dropdown (Collapsible) -->
-  <div>
-    <button id="mobile-services-btn" class="flex justify-between items-center w-full py-2 text-left hover:text-indigo-600">
-          <a href="/services/">Services</a>
-      <svg id="mobile-services-icon" class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor"
-        viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M19 9l-7 7-7-7" />
-      </svg>
-    </button>
+      <!-- Feature 5 -->
+      <div class="flex items-start gap-4">
+        <div class="text-indigo-600 text-3xl">📈</div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800">SEO-Ready Foundation</h3>
+          <p class="text-gray-600 mt-2">
+            I implement clean semantic code, schema, meta tags, and responsive design to support your SEO goals.
+          </p>
+        </div>
+      </div>
 
-    <div id="mobile-services-menu" class="ml-4 mt-1 space-y-1 hidden">
-      <p class="font-semibold text-indigo-500">Website Solutions</p>
-      <a href="/services/responsive-development/" class="block pl-2">Responsive Website</a>
-      <a href="/services/wordpress-development/" class="block pl-2">WordPress Development</a>
-      <a href="/services/custom-development/" class="block pl-2">Custom Website</a>
-      <a href="/services/speed-optimization/" class="block pl-2">Speed Optimization</a>
-
-      <p class="font-semibold text-indigo-500 mt-2">Maintenance & Security</p>
-      <a href="/services/maintenance-security/" class="block pl-2">Maintenance & Security</a>
-
-      <p class="font-semibold text-indigo-500 mt-2">Digital Strategy</p>
-      <a href="/services/landing-page-design/" class="block pl-2">Landing Pages</a>
-      <a href="/services/seo-optimization/" class="block pl-2">SEO Optimization</a>
-      <a href="/services/consulting-strategy/" class="block pl-2">Tech Consulting</a>
-
-      <p class="font-semibold text-indigo-500 mt-2">Applications</p>
-      <a href="/services/saas-platforms/" class="block pl-2">Custom SaaS</a>
-      <a href="/services/ecommerce-store/" class="block pl-2">E-Commerce Store</a>
+      <!-- Feature 6 -->
+      <div class="flex items-start gap-4">
+        <div class="text-indigo-600 text-3xl">🤝</div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800">One-on-One Collaboration</h3>
+          <p class="text-gray-600 mt-2">
+            You deal directly with me. No delays, no miscommunication—just clear updates and a streamlined workflow.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
+</section>
+<section class="bg-white py-20 px-6">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">
+      Frequently Asked Questions
+    </h2>
+    
+    <div x-data="{ selected: null }" class="space-y-4">
+      
+      <!-- FAQ 1 -->
+      <div class="border rounded-lg shadow-sm">
+        <button @click="selected !== 1 ? selected = 1 : selected = null"
+          class="w-full text-left px-6 py-4 text-lg font-medium flex justify-between items-center">
+          Do you create custom WordPress themes or use existing templates?
+          <span x-show="selected !== 1">+</span>
+          <span x-show="selected === 1">−</span>
+        </button>
+        <div x-show="selected === 1" x-transition x-collapse class="px-6 pb-4 text-gray-600">
+          I focus on building custom themes tailored to your brand and business needs, ensuring performance and scalability. Pre-built themes can be used if preferred or budget is a concern.
+        </div>
+      </div>
 
-  <a href="#projects" class="block py-2">Projects</a>
-  <a href="#contact" class="block py-2">Contact</a>
-</div>
-</header>
+      <!-- FAQ 2 -->
+      <div class="border rounded-lg shadow-sm">
+        <button @click="selected !== 2 ? selected = 2 : selected = null"
+          class="w-full text-left px-6 py-4 text-lg font-medium flex justify-between items-center">
+          What plugins do you recommend for my WordPress site?
+          <span x-show="selected !== 2">+</span>
+          <span x-show="selected === 2">−</span>
+        </button>
+        <div x-show="selected === 2" x-transition x-collapse class="px-6 pb-4 text-gray-600">
+          I recommend lightweight, secure, and regularly updated plugins that improve SEO, security, and speed. I avoid plugin bloat and only add what adds real value.
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="border rounded-lg shadow-sm">
+        <button @click="selected !== 3 ? selected = 3 : selected = null"
+          class="w-full text-left px-6 py-4 text-lg font-medium flex justify-between items-center">
+          Will my website be mobile-friendly and SEO optimized?
+          <span x-show="selected !== 3">+</span>
+          <span x-show="selected === 3">−</span>
+        </button>
+        <div x-show="selected === 3" x-transition x-collapse class="px-6 pb-4 text-gray-600">
+          Absolutely. Responsive design and SEO best practices are core to every project, ensuring your website performs well on all devices and ranks well in search engines.
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="border rounded-lg shadow-sm">
+        <button @click="selected !== 4 ? selected = 4 : selected = null"
+          class="w-full text-left px-6 py-4 text-lg font-medium flex justify-between items-center">
+          How do you handle website security and backups?
+          <span x-show="selected !== 4">+</span>
+          <span x-show="selected === 4">−</span>
+        </button>
+        <div x-show="selected === 4" x-transition x-collapse class="px-6 pb-4 text-gray-600">
+          I implement SSL certificates, firewall rules, secure login protocols, and automated backups to protect your site and data.
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="border rounded-lg shadow-sm">
+        <button @click="selected !== 5 ? selected = 5 : selected = null"
+          class="w-full text-left px-6 py-4 text-lg font-medium flex justify-between items-center">
+          How long does it take to complete a WordPress website?
+          <span x-show="selected !== 5">+</span>
+          <span x-show="selected === 5">−</span>
+        </button>
+        <div x-show="selected === 5" x-transition x-collapse class="px-6 pb-4 text-gray-600">
+          Timeline depends on project scope — simple sites take 1-2 weeks; custom, complex sites may take 3-4 weeks. Exact schedule provided after requirements gathering.
+        </div>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div class="border rounded-lg shadow-sm">
+        <button @click="selected !== 6 ? selected = 6 : selected = null"
+          class="w-full text-left px-6 py-4 text-lg font-medium flex justify-between items-center">
+          Do you provide post-launch maintenance and support?
+          <span x-show="selected !== 6">+</span>
+          <span x-show="selected === 6">−</span>
+        </button>
+        <div x-show="selected === 6" x-transition x-collapse class="px-6 pb-4 text-gray-600">
+          Yes, I offer maintenance packages that include updates, backups, security monitoring, and performance optimization to keep your site running smoothly.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+<section
+      id="free-consultation"
+      class="bg-gray-50 dark:bg-gray-900 py-16 px-6 sm:px-12 lg:px-24"
+    >
+      <div
+        id="contact"
+        class="max-w-3xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8"
+      >
+        <h2
+          class="text-3xl font-bold text-gray-900 dark:text-white mb-3 text-center"
+        >
+          Free Consultation
+        </h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-8 text-center">
+          Let’s discuss your project or questions — fill out the form and I’ll
+          get back to you shortly.
+        </p>
+
+        <form id="quoteForm" class="space-y-6">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            class="w-full p-3 rounded border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            class="w-full p-3 rounded border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white"
+          />
+          <textarea
+            style="resize: none"
+            name="message"
+            rows="5"
+            placeholder="Describe your project or questions..."
+            required
+            class="w-full p-3 rounded border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white"
+          ></textarea>
+
+          <!-- Optional Consultation Topic -->
+          <select
+            name="topic"
+            class="w-full p-3 rounded border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white"
+            aria-label="Consultation Topic"
+          >
+            <option value="" disabled selected>
+              Select Consultation Topic
+            </option>
+            <option value="web-development">Web Development</option>
+            <option value="wordpress">WordPress</option>
+            <option value="freelancing">Freelancing Advice</option>
+            <option value="other">Other</option>
+          </select>
+
+          <button
+            type="submit"
+            class="w-full flex justify-center items-center bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded py-3 transition"
+          >
+            <span class="btn-text">Request Free Consultation</span>
+            <svg
+              class="tick-icon ml-2 w-6 h-6 text-green-400 hidden"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5 13l4 4L19 7"
+              ></path>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </section>
 
 
-<script>
-  const mobileServicesBtn = document.getElementById('mobile-services-btn');
-  const mobileServicesMenu = document.getElementById('mobile-services-menu');
-  const mobileServicesIcon = document.getElementById('mobile-services-icon');
+    <script>
+      const mobileServicesBtn = document.getElementById("mobile-services-btn");
+      const mobileServicesMenu = document.getElementById(
+        "mobile-services-menu"
+      );
+      const mobileServicesIcon = document.getElementById(
+        "mobile-services-icon"
+      );
 
-  mobileServicesBtn.addEventListener('click', () => {
-    mobileServicesMenu.classList.toggle('hidden');
-    mobileServicesIcon.classList.toggle('rotate-180');
-  });
-</script>
-<footer class="bg-white dark:bg-gray-800 py-6 text-center mt-20">
+      mobileServicesBtn.addEventListener("click", () => {
+        mobileServicesMenu.classList.toggle("hidden");
+        mobileServicesIcon.classList.toggle("rotate-180");
+      });
+    </script>
+    <footer class="bg-white dark:bg-gray-800 py-6 text-center mt-20">
       <p class="text-sm">© 2025 Rafay Memon. All rights reserved.</p>
       <div class="flex justify-center space-x-4 mt-2">
         <a
@@ -206,6 +680,5 @@
       defer
     ></script>
     <script src="/js/script.js"></script>
-
   </body>
 </html>

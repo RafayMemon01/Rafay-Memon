@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <script src="https://unpkg.com/@heroicons/vue@2.0.0/dist/heroicons.min.js"></script>
+      <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563eb', // blue-600
+            secondary: '#1e293b', // slate-800
+          }
+        }
+      }
+    }
+  </script>
+  </head>
+  <body
+    class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white font-sans"
+    oncontextmenu="return false;"
+  >
+    <a
+      href="https://wa.me/923083960447"
+      target="_blank"
+      class="fixed bottom-4 right-4 z-50 bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg transition duration-300 ease-in-out"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-6 h-6"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.09.55 4.09 1.61 5.87L0 24l6.27-1.64A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.25-6.19-3.48-8.52zM12 22a9.89 9.89 0 0 1-5.06-1.36l-.36-.21-3.72.97.99-3.62-.23-.37A9.92 9.92 0 0 1 2 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.13-7.73c-.28-.14-1.65-.81-1.91-.9-.26-.1-.45-.14-.64.14s-.73.9-.9 1.08c-.17.18-.33.2-.61.07s-1.19-.44-2.27-1.41c-.84-.75-1.41-1.68-1.57-1.96s-.02-.44.12-.58c.12-.12.27-.33.4-.5.13-.17.17-.28.26-.47.09-.18.04-.35-.02-.5-.07-.14-.64-1.54-.88-2.1-.23-.55-.46-.48-.64-.49h-.55c-.17 0-.45.06-.68.28s-.89.86-.89 2.1c0 1.23.9 2.43 1.03 2.6.13.18 1.76 2.69 4.28 3.77.6.26 1.07.42 1.43.54.6.19 1.15.16 1.58.1.48-.07 1.48-.6 1.7-1.18.21-.58.21-1.07.15-1.18-.07-.11-.25-.17-.53-.31z"
+        />
+      </svg>
+    </a>
+
+<header class="shadow-md sticky top-0 bg-white dark:bg-gray-800 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <span class="text-xl font-bold text-indigo-600">Rafay Memon</span>
+
+    <!-- Desktop Nav -->
+    <nav class="space-x-6 hidden md:flex items-center">
+      <a href="/" class="hover:text-indigo-600">Home</a>
+      <a href="/about/" class="hover:text-indigo-600">About</a>
+
+      <!-- Services Dropdown -->
+      <div class="relative group">
+        <button class="hover:text-indigo-600 flex items-center gap-1">
+          <a href="/services/">Services</a>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div
+          class="absolute left-0 mt-2 w-60 bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-200 z-50">
+          <div class="p-3 space-y-2 text-sm text-gray-800 dark:text-gray-200">
+            <div>
+              <h4 class="font-semibold text-indigo-500">Website Solutions</h4>
+              <ul class="space-y-1 pl-3">
+                <li><a href="/services/responsive-development/" class="block hover:text-indigo-600">Responsive Website Development</a></li>
+                <li><a href="/services/wordpress-development/" class="block hover:text-indigo-600">WordPress Website Development</a></li>
+                <li><a href="/services/custom-development/" class="block hover:text-indigo-600">Custom Website Development</a></li>
+                <li><a href="/services/speed-optimization/" class="block hover:text-indigo-600">Website Speed Optimization</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-indigo-500">Maintenance & Security</h4>
+              <ul class="space-y-1 pl-3">
+                <li><a href="/services/maintenance-security/" class="block hover:text-indigo-600">Website Maintenance & Security</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-indigo-500">Digital Strategy</h4>
+              <ul class="space-y-1 pl-3">
+                <li><a href="/services/landing-page-design/" class="block hover:text-indigo-600">Landing Page Design</a></li>
+                <li><a href="/services/seo-optimization/" class="block hover:text-indigo-600">SEO Optimization</a></li>
+                <li><a href="/services/consulting-strategy/" class="block hover:text-indigo-600">Tech Consulting & Strategy</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-indigo-500">Applications</h4>
+              <ul class="space-y-1 pl-3">
+                <li><a href="/services/saas-platforms/" class="block hover:text-indigo-600">Custom SaaS (MERN Stack)</a></li>
+                <li><a href="/services/ecommerce-store/" class="block hover:text-indigo-600">E-Commerce Store Development</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#projects" class="hover:text-indigo-600">Projects</a>
+      <a href="#contact" class="hover:text-indigo-600">Contact</a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+        stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <!-- 📱 Mobile Menu -->
+<div id="mobile-menu" class="md:hidden px-4 pb-4 hidden space-y-1 text-sm">
+  <a href="/" class="block py-2">Home</a>
+  <a href="/about/" class="block py-2">About</a>
+
+  <!-- 📁 Services Dropdown (Collapsible) -->
+  <div>
+    <button id="mobile-services-btn" class="flex justify-between items-center w-full py-2 text-left hover:text-indigo-600">
+          <a href="/services/">Services</a>
+      <svg id="mobile-services-icon" class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+
+    <div id="mobile-services-menu" class="ml-4 mt-1 space-y-1 hidden">
+      <p class="font-semibold text-indigo-500">Website Solutions</p>
+      <a href="/services/responsive-development/" class="block pl-2">Responsive Website</a>
+      <a href="/services/wordpress-development/" class="block pl-2">WordPress Development</a>
+      <a href="/services/custom-development/" class="block pl-2">Custom Website</a>
+      <a href="/services/speed-optimization/" class="block pl-2">Speed Optimization</a>
+
+      <p class="font-semibold text-indigo-500 mt-2">Maintenance & Security</p>
+      <a href="/services/maintenance-security/" class="block pl-2">Maintenance & Security</a>
+
+      <p class="font-semibold text-indigo-500 mt-2">Digital Strategy</p>
+      <a href="/services/landing-page-design/" class="block pl-2">Landing Pages</a>
+      <a href="/services/seo-optimization/" class="block pl-2">SEO Optimization</a>
+      <a href="/services/consulting-strategy/" class="block pl-2">Tech Consulting</a>
+
+      <p class="font-semibold text-indigo-500 mt-2">Applications</p>
+      <a href="/services/saas-platforms/" class="block pl-2">Custom SaaS</a>
+      <a href="/services/ecommerce-store/" class="block pl-2">E-Commerce Store</a>
+    </div>
+  </div>
+
+  <a href="#projects" class="block py-2">Projects</a>
+  <a href="#contact" class="block py-2">Contact</a>
+</div>
+</header>
+
+
+<script>
+  const mobileServicesBtn = document.getElementById('mobile-services-btn');
+  const mobileServicesMenu = document.getElementById('mobile-services-menu');
+  const mobileServicesIcon = document.getElementById('mobile-services-icon');
+
+  mobileServicesBtn.addEventListener('click', () => {
+    mobileServicesMenu.classList.toggle('hidden');
+    mobileServicesIcon.classList.toggle('rotate-180');
+  });
+</script>
+<footer class="bg-white dark:bg-gray-800 py-6 text-center mt-20">
+      <p class="text-sm">© 2025 Rafay Memon. All rights reserved.</p>
+      <div class="flex justify-center space-x-4 mt-2">
+        <a
+          href="https://github.com/rafaymemon01"
+          target="_blank"
+          aria-label="GitHub"
+        >
+          <svg
+            class="w-5 h-5 hover:text-primary"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 .5a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6a3.1 3.1 0 00-1.3-1.7c-1.1-.8.1-.8.1-.8a2.5 2.5 0 011.8 1.2 2.6 2.6 0 003.5 1 2.6 2.6 0 01.8-1.6c-2.7-.3-5.6-1.3-5.6-5.8a4.6 4.6 0 011.2-3.2 4.3 4.3 0 01.1-3.1s1-.3 3.3 1.2a11.4 11.4 0 016 0C16 5 17 5.3 17 5.3a4.3 4.3 0 01.1 3.1 4.6 4.6 0 011.2 3.2c0 4.5-2.9 5.5-5.6 5.8a3 3 0 01.9 2.3v3.5c0 .3.2.7.8.6A12 12 0 0012 .5z"
+            />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="/js/script.js"></script>
+
+  </body>
+</html>

@@ -57,30 +57,117 @@
 
 
   <header class="shadow-md sticky top-0 bg-white dark:bg-gray-800 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-      <span class="text-xl font-bold">Rafay Memon</span>
-      <nav class="space-x-4 hidden md:block">
-        <a href="/" class="hover:text-indigo-600">Home</a>
-        <a href="../about/" class="hover:text-indigo-600">About</a>
-        <a href="../services/" class="hover:text-indigo-600">Services</a>
-        <a href="#projects" class="hover:text-indigo-600">Projects</a>
-        <a href="#contact" class="hover:text-indigo-600">Contact</a>
-      </nav>
-      <button id="menu-btn" class="md:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <h1 class="text-xl font-bold text-indigo-600">Rafay Memon</h1>
+
+    <!-- Desktop Nav -->
+    <nav class="space-x-6 hidden md:flex items-center">
+      <a href="/" class="hover:text-indigo-600">Home</a>
+      <a href="/about/" class="hover:text-indigo-600">About</a>
+
+      <!-- Services Dropdown -->
+      <div class="relative group">
+        <button class="hover:text-indigo-600 flex items-center gap-1">
+          <a href="/services/">Services</a>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div
+          class="absolute left-0 mt-2 w-60 bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-200 z-50">
+          <div class="p-3 space-y-2 text-sm text-gray-800 dark:text-gray-200">
+            <div>
+              <h4 class="font-semibold text-indigo-500">Website Solutions</h4>
+              <ul class="space-y-1 pl-3">
+                <li><a href="/services/responsive-development/" class="block hover:text-indigo-600">Responsive Website Development</a></li>
+                <li><a href="/services/wordpress-development/" class="block hover:text-indigo-600">WordPress Website Development</a></li>
+                <li><a href="/services/custom-development/" class="block hover:text-indigo-600">Custom Website Development</a></li>
+                <li><a href="/services/speed-optimization/" class="block hover:text-indigo-600">Website Speed Optimization</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-indigo-500">Maintenance & Security</h4>
+              <ul class="space-y-1 pl-3">
+                <li><a href="/services/maintenance-security/" class="block hover:text-indigo-600">Website Maintenance & Security</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-indigo-500">Digital Strategy</h4>
+              <ul class="space-y-1 pl-3">
+                <li><a href="/services/landing-page-design/" class="block hover:text-indigo-600">Landing Page Design</a></li>
+                <li><a href="/services/seo-optimization/" class="block hover:text-indigo-600">SEO Optimization</a></li>
+                <li><a href="/services/consulting-strategy/" class="block hover:text-indigo-600">Tech Consulting & Strategy</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-indigo-500">Applications</h4>
+              <ul class="space-y-1 pl-3">
+                <li><a href="/services/saas-platforms/" class="block hover:text-indigo-600">Custom SaaS (MERN Stack)</a></li>
+                <li><a href="/services/ecommerce-store/" class="block hover:text-indigo-600">E-Commerce Store Development</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#projects" class="hover:text-indigo-600">Projects</a>
+      <a href="#contact" class="hover:text-indigo-600">Contact</a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+        stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <!-- 📱 Mobile Menu -->
+<div id="mobile-menu" class="md:hidden px-4 pb-4 hidden space-y-1 text-sm">
+  <a href="/" class="block py-2">Home</a>
+  <a href="/about/" class="block py-2">About</a>
+
+  <!-- 📁 Services Dropdown (Collapsible) -->
+  <div>
+    <button id="mobile-services-btn" class="flex justify-between items-center w-full py-2 text-left hover:text-indigo-600">
+          <a href="/services/">Services</a>
+
+      <svg id="mobile-services-icon" class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+
+    <div id="mobile-services-menu" class="ml-4 mt-1 space-y-1 hidden">
+      <p class="font-semibold text-indigo-500">Website Solutions</p>
+      <a href="/services/responsive-development/" class="block pl-2">Responsive Website</a>
+      <a href="/services/wordpress-development/" class="block pl-2">WordPress Development</a>
+      <a href="/services/custom-development/" class="block pl-2">Custom Website</a>
+      <a href="/services/speed-optimization/" class="block pl-2">Speed Optimization</a>
+
+      <p class="font-semibold text-indigo-500 mt-2">Maintenance & Security</p>
+      <a href="/services/maintenance-security/" class="block pl-2">Maintenance & Security</a>
+
+      <p class="font-semibold text-indigo-500 mt-2">Digital Strategy</p>
+      <a href="/services/landing-page-design/" class="block pl-2">Landing Pages</a>
+      <a href="/services/seo-optimization/" class="block pl-2">SEO Optimization</a>
+      <a href="/services/consulting-strategy/" class="block pl-2">Tech Consulting</a>
+
+      <p class="font-semibold text-indigo-500 mt-2">Applications</p>
+      <a href="/services/saas-platforms/" class="block pl-2">Custom SaaS</a>
+      <a href="/services/ecommerce-store/" class="block pl-2">E-Commerce Store</a>
     </div>
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden px-4 pb-4 hidden">
-      <a href="/" class="block py-1">Home</a>
-      <a href="../about/" class="block py-1">About</a>
-      <a href="../services/" class="block py-1">Services</a>
-      <a href="#projects" class="block py-1">Projects</a>
-      <a href="#contact" class="block py-1">Contact</a>
-    </div>
-  </header>
+  </div>
+
+  <a href="#projects" class="block py-2">Projects</a>
+  <a href="#contact" class="block py-2">Contact</a>
+</div>
+</header>
 
   <section class="bg-white dark:bg-gray-900 py-16 px-6 sm:px-10 md:px-20">
   <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">

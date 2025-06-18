@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Service</title>
+    <title>SEO Optimization</title>
     <link
       rel="shortcut icon"
       href="/assets/images/favicon.ico"
@@ -165,6 +165,248 @@
 </div>
 </header>
 
+<!-- Hero Section -->
+<section class="bg-gradient-to-br from-white to-gray-100 py-20 px-6">
+  <div class="max-w-5xl mx-auto text-center">
+    <div class="mx-auto w-16 h-16 mb-6 text-green-600">
+      <!-- HeroIcon: Chart Bar -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="w-16 h-16 mx-auto">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M3 3v18h18M7 15h2v3H7v-3zm4-6h2v9h-2V9zm4-3h2v12h-2V6z" />
+      </svg>
+    </div>
+    <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-4">
+      SEO Optimization Service
+    </h1>
+    <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+      Boost your search engine rankings, drive organic traffic, and increase visibility with data-driven SEO strategies tailored for your business.
+    </p>
+  </div>
+</section>
+
+<!-- What I Offer Section -->
+<section class="bg-white py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+      What I Offer
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">On-Page Optimization</h3>
+        <p class="text-gray-600">Title tags, meta descriptions, headers, content optimization, and internal linking to improve site structure and keyword relevance.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Technical SEO</h3>
+        <p class="text-gray-600">Site speed, mobile-friendliness, indexation, sitemap, robots.txt, and core web vitals optimization to ensure search engine accessibility.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Keyword Research & Strategy</h3>
+        <p class="text-gray-600">In-depth research to identify the right keywords that align with your business goals and search intent of your audience.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Content Optimization</h3>
+        <p class="text-gray-600">SEO-friendly content creation or enhancement to improve relevance, engagement, and ranking potential.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Local SEO</h3>
+        <p class="text-gray-600">Google Business Profile optimization, local citations, and geo-targeted keywords to improve local visibility and map rankings.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Performance Reporting</h3>
+        <p class="text-gray-600">Monthly insights on ranking improvements, traffic changes, and actionable SEO progress updates to track ROI.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gray-50 py-20 px-6">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose Me for SEO Optimization?</h2>
+    <p class="text-gray-600 text-lg max-w-3xl mx-auto mb-12">
+      As an experienced SEO professional, I don’t just chase rankings — I build sustainable growth strategies tailored to your business goals. Here’s why clients trust me to deliver real, measurable results:
+    </p>
+    
+    <div class="grid md:grid-cols-2 gap-8 text-left">
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">Proven Track Record</h3>
+        <p class="text-gray-600">I’ve helped multiple websites climb to Page 1 on Google using ethical, data-backed SEO practices — no black-hat tactics, ever.</p>
+      </div>
+      
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">Tailored Strategies</h3>
+        <p class="text-gray-600">Every business is unique. I perform in-depth audits and create a custom roadmap based on your niche, competition, and market intent.</p>
+      </div>
+      
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">Full On-Page & Off-Page Focus</h3>
+        <p class="text-gray-600">From optimizing meta tags and improving site structure to crafting backlink strategies, I cover every essential aspect of SEO.</p>
+      </div>
+      
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">Transparent Reporting</h3>
+        <p class="text-gray-600">You’ll receive regular updates with keyword tracking, performance metrics, and action items — no fluff, just facts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-white py-20 px-6">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">
+      Frequently Asked Questions
+    </h2>
+
+    <div x-data="{ selected: null }" class="space-y-4">
+
+      <!-- FAQ 1 -->
+      <div class="border rounded-lg shadow-sm">
+        <button @click="selected !== 1 ? selected = 1 : selected = null"
+          class="w-full text-left px-6 py-4 text-lg font-medium flex justify-between items-center">
+          How long does it take to see SEO results?
+          <span x-show="selected !== 1">+</span>
+          <span x-show="selected === 1">−</span>
+        </button>
+        <div x-show="selected === 1" x-transition x-collapse class="px-6 pb-4 text-gray-600">
+          SEO is a long-term game. Most clients start seeing noticeable improvements in 2–3 months, with significant gains after 6 months of consistent optimization.
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="border rounded-lg shadow-sm">
+        <button @click="selected !== 2 ? selected = 2 : selected = null"
+          class="w-full text-left px-6 py-4 text-lg font-medium flex justify-between items-center">
+          Do you guarantee a #1 ranking on Google?
+          <span x-show="selected !== 2">+</span>
+          <span x-show="selected === 2">−</span>
+        </button>
+        <div x-show="selected === 2" x-transition x-collapse class="px-6 pb-4 text-gray-600">
+          No ethical SEO expert will guarantee a #1 spot, but I do guarantee effort, transparency, and strategies proven to increase visibility, traffic, and engagement over time.
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="border rounded-lg shadow-sm">
+        <button @click="selected !== 3 ? selected = 3 : selected = null"
+          class="w-full text-left px-6 py-4 text-lg font-medium flex justify-between items-center">
+          What platforms do you support for SEO?
+          <span x-show="selected !== 3">+</span>
+          <span x-show="selected === 3">−</span>
+        </button>
+        <div x-show="selected === 3" x-transition x-collapse class="px-6 pb-4 text-gray-600">
+          I optimize websites built on WordPress, custom HTML/CSS, React, and even eCommerce platforms like WooCommerce and Shopify.
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="border rounded-lg shadow-sm">
+        <button @click="selected !== 4 ? selected = 4 : selected = null"
+          class="w-full text-left px-6 py-4 text-lg font-medium flex justify-between items-center">
+          Is your SEO service one-time or ongoing?
+          <span x-show="selected !== 4">+</span>
+          <span x-show="selected === 4">−</span>
+        </button>
+        <div x-show="selected === 4" x-transition x-collapse class="px-6 pb-4 text-gray-600">
+          I offer both! One-time audits and fixes are available, but for long-term growth, I recommend my monthly SEO management plans.
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="border rounded-lg shadow-sm">
+        <button @click="selected !== 5 ? selected = 5 : selected = null"
+          class="w-full text-left px-6 py-4 text-lg font-medium flex justify-between items-center">
+          Will you work on existing content or create new content?
+          <span x-show="selected !== 5">+</span>
+          <span x-show="selected === 5">−</span>
+        </button>
+        <div x-show="selected === 5" x-transition x-collapse class="px-6 pb-4 text-gray-600">
+          Both. I optimize your existing content for SEO best practices and, if needed, provide new content recommendations or help create fresh keyword-targeted blog posts.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section
+      id="free-consultation"
+      class="bg-gray-50 dark:bg-gray-900 py-16 px-6 sm:px-12 lg:px-24"
+    >
+      <div
+        id="contact"
+        class="max-w-3xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8"
+      >
+        <h2
+          class="text-3xl font-bold text-gray-900 dark:text-white mb-3 text-center"
+        >
+          Free Consultation
+        </h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-8 text-center">
+          Let’s discuss your project or questions — fill out the form and I’ll
+          get back to you shortly.
+        </p>
+
+        <form id="quoteForm" class="space-y-6">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            class="w-full p-3 rounded border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            class="w-full p-3 rounded border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white"
+          />
+          <textarea
+            style="resize: none"
+            name="message"
+            rows="5"
+            placeholder="Describe your project or questions..."
+            required
+            class="w-full p-3 rounded border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white"
+          ></textarea>
+
+          <select
+            name="topic"
+            class="w-full p-3 rounded border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white"
+            aria-label="Consultation Topic"
+          >
+            <option value="" disabled selected>
+              Select Consultation Topic
+            </option>
+            <option value="web-development">Web Development</option>
+            <option value="wordpress">WordPress</option>
+            <option value="freelancing">Freelancing Advice</option>
+            <option value="other">Other</option>
+          </select>
+
+          <button
+            type="submit"
+            class="w-full flex justify-center items-center bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded py-3 transition"
+          >
+            <span class="btn-text">Request Free Consultation</span>
+            <svg
+              class="tick-icon ml-2 w-6 h-6 text-green-400 hidden"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5 13l4 4L19 7"
+              ></path>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
 <script>
   const mobileServicesBtn = document.getElementById('mobile-services-btn');
